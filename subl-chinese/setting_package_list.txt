@@ -1,0 +1,25 @@
+Emmet
+JsFormat
+SideBarEnhancements
+TrailingSpaces
+Tag
+Terminal
+SublimeCodeIntel
+Autoprefixer
+Git
+GitGutter
+BracketHighlighter
+EditorConfig
+Sublimall
+SublimeREPL
+DocBlockr
+Floobits
+AutoFileName
+ColorPicker
+Colorcoder
+PlainTasks
+SublimeLinter
+Alignment
+EncodingHelper
+HTML-CSS-JS Prettify
+HTMLBeautify
