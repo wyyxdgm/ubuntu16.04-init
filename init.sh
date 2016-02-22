@@ -49,7 +49,11 @@ sudo apt-get install colordiff
 sudo apt-get install wine1.6
 sudo apt-get install xclip
 sudo apt-get install android-tools-adb
+sudo apt-get install mysql-server
+sudo apt-get install mysql-workbench
+
 sudo npm install -g cnpm --registry=https://registry.npm.taobao.org
 sudo npm install -g supervisor
 sudo npm install -g node-inspector
 sudo npm install -g grunt
+sudo npm install -g mocha
