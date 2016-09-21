@@ -52,6 +52,9 @@ sudo apt-get install android-tools-adb
 sudo apt-get install mysql-server
 sudo apt-get install mysql-workbench
 
+#python for sci
+#sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-sympy-doc python-sympy-doc python-nose python-nose-doc
+
 sudo npm install -g cnpm --registry=https://registry.npm.taobao.org
 sudo npm install -g supervisor
 sudo npm install -g node-inspector
