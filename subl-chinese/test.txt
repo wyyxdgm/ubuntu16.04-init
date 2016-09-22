@@ -23,4 +23,3 @@ OnlyShowIn=Unity;
 Name=New File
 Exec=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text --command new_file"
 OnlyShowIn=Unity;
-
