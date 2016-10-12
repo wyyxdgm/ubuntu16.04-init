@@ -52,27 +52,7 @@ sudo apt-get install android-tools-adb
 sudo apt-get install mysql-server
 sudo apt-get install mysql-workbench
 
-#python for sci
-#sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-sympy-doc python-sympy-doc python-nose python-nose-doc
 
-#opencv
-#mkdir opt
-#cd opt
-#wget http://jaist.dl.sourceforge.net/project/opencvlibrary/opencv-unix/2.4.9/opencv-2.4.9.zip
-#unzip opencv-2.4.9.zip && cd opencv-2.4.9
-#sudo apt-get install build-essential cmake libgtk2.0-dev pkg-config python-dev python-numpy libavcodec-dev libavformat-dev libswscale-dev
-#mkdir release && cd release && cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
-#make && sudo make install
-
-#BeautifulSoup
-#sudo apt-get install python-bs4
-
-#Neurolab
-#pip install neurolab
-
-#R
-#sudo apt-get install r-base
-#sudo apt-get install r-base-dev
 sudo npm install -g cnpm --registry=https://registry.npm.taobao.org
 sudo npm install -g supervisor
 sudo npm install -g node-inspector
