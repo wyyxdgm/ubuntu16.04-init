@@ -12,7 +12,7 @@
 
 sudo apt-get install -y vim
 
-sudo echo "deb http://archive.ubuntukylin.com:10006/ubuntukylin trusty main"  | sudo tee /etc/apt/sources.list.d/ubuntukylin.list
+# sudo echo "deb http://archive.ubuntukylin.com:10006/ubuntukylin xenial main"  | sudo tee /etc/apt/sources.list.d/ubuntukylin.list
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.back
 sudo sed -i "s/us.archive.ubuntu.com/mirrors.aliyun.com/g" /etc/apt/sources.list
 sudo sed -i "s/security.ubuntu.com/mirrors.aliyun.com/g" /etc/apt/sources.list
@@ -33,8 +33,8 @@ echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" 
 sudo apt-get update
 
 #3.2
-sudo apt-get install -y mongodb-org=3.2.10 mongodb-org-server=3.2.10 mongodb-org-shell=3.2.10 mongodb-org-mongos=3.2.10 mongodb-org-tools=3.2.10
-
+sudo apt-get install -y mongodb-org=3.2.11 mongodb-org-server=3.2.11 mongodb-org-shell=3.2.11 mongodb-org-mongos=3.2.11 mongodb-org-tools=3.2.11do apt-get install -y mongodb-org=3.2.10 mongodb-org-server=3.2.10 mongodb-org-shell=3.2.10 mongodb-org-mongos=3.2.10 mongodb-org-tools=3.2.10
+sudo service mongod start
 sudo apt-get install -y sogoupinyin
 #sudo apt-get install -y wps-office
 # sudo apt-get install -y oracle-java8-installer
