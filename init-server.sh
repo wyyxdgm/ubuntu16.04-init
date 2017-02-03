@@ -33,12 +33,6 @@ sudo npm install -g mocha
 sudo npm install -g bower
 sudo npm install -g pm2
 
-if [ -z `git config --global user.name` ] ; then
-	echo 'git config --global ...'
-	git config --global user.name guimaodai
-	git config --global user.email wyyxdgm@163.com
-	git config --global core.editor vim
-fi
 
 if [ ! -f ~/.ssh/id_rsa ] ; then
 	echo 'ssh-keygen ...'
