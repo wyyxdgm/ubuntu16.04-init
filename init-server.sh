@@ -26,7 +26,10 @@ nvm ls-remote
 sudo nvm install 6.9.4
 sudo npm install -g cnpm --registry=https://registry.npm.taobao.org
 sudo npm install -g supervisor
+sudo npm install -g node-inspector
+sudo npm install -g grunt
 sudo npm install -g gulp
+sudo npm install -g mocha
 sudo npm install -g bower
 sudo npm install -g pm2
 

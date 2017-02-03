@@ -83,11 +83,22 @@ sudo apt-get install -y mysql-workbench
 #sudo apt-get install r-base
 #sudo apt-get install r-base-dev
 
+#nvm
+sudo apt install curl
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh |sudo bash
+source ~/.bashrc
+nvm ls-remote
+
+sudo nvm install 6.9.4
+
 sudo npm install -g cnpm --registry=https://registry.npm.taobao.org
 sudo npm install -g supervisor
 sudo npm install -g node-inspector
 sudo npm install -g grunt
+sudo npm install -g gulp
 sudo npm install -g mocha
+sudo npm install -g bower
+sudo npm install -g pm2
 
 sudo echo "greeter-show-manual-login=true" > /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf
 sudo echo "allow-guest=false" > /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf
