@@ -15,15 +15,16 @@ sudo apt-get install nodejs-legacy -y
 sudo apt-get install -y git
 sudo apt-get install -y nmap
 
-#修改apache2 默认端口
+####修改apache2 默认端口;不安装nginx直接注释掉即可。#####
 apache2_ports_path=/etc/apache2/ports.conf
 if [ -f ${apache2_ports_path} ]; then
 	sed -i "s/80/81/g" ${apache2_ports_path}
 	sed -i "s/443/444/g" ${apache2_ports_path}
 	/etc/init.d/apache2 restart
 fi
-
 sudo apt-get install nginx-full -y
+####修改apache2 默认端口;不安装nginx直接注释掉即可。#####
+
 sudo apt-get install npm -y
 sudo apt-get install zip -y
 #nvm
