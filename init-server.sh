@@ -10,13 +10,23 @@ apt-get install -y mongodb-org=3.2.11 mongodb-org-server=3.2.11 mongodb-org-shel
 
 service mongod restart
 
-apt-get install redis-server -y
-apt-get install nodejs-legacy -y
-apt-get install -y git
-apt-get install -y nmap
-apt-get install nginx-full -y
-apt-get install npm -y
-apt-get install zip -y
+sudo apt-get install redis-server -y
+sudo apt-get install nodejs-legacy -y
+sudo apt-get install -y git
+sudo apt-get install -y nmap
+
+####修改apache2 默认端口;不安装nginx直接注释掉即可。#####
+apache2_ports_path=/etc/apache2/ports.conf
+if [ -f ${apache2_ports_path} ]; then
+	sed -i "s/80/81/g" ${apache2_ports_path}
+	sed -i "s/443/444/g" ${apache2_ports_path}
+	/etc/init.d/apache2 restart
+fi
+sudo apt-get install nginx-full -y
+####修改apache2 默认端口;不安装nginx直接注释掉即可。#####
+
+sudo apt-get install npm -y
+sudo apt-get install zip -y
 #nvm
 apt install curl
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
@@ -32,13 +42,6 @@ npm install -g gulp
 npm install -g mocha
 npm install -g bower
 npm install -g pm2
-
-
-if [ ! -f ~/.ssh/id_rsa ] ; then
-	echo 'ssh-keygen ...'
-	ssh-keygen
-fi
-
 
 # pre get install
 # apt-get install -y vim
