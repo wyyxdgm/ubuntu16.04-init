@@ -10,3 +10,4 @@ sudo apt-get install -y chromium-browser
 
 sudo apt-get install -y mysql-server
 sudo apt-get install -y mysql-workbench
+sudo apt-get install -y phantomjs
