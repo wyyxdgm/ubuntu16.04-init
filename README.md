@@ -11,7 +11,7 @@ curl -o- https://raw.githubusercontent.com/wyyxdgm/ubuntu16.04-init/master/init-
 
 
 #step 2 安装desktop包.（desktop会安装多一些的包。）
-curl -o- https://raw.githubusercontent.com/wyyxdgm/ubuntu16.04-init/master/init.sh|sudo bash
+wget -qO- https://raw.githubusercontent.com/wyyxdgm/ubuntu16.04-init/master/init2.sh|sudo bash
 
 #ubuntu桌面版sublime汉化
 ./subl-chinese/sublime_imfix.sh
