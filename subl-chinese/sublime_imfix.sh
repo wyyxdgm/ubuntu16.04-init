@@ -1,6 +1,6 @@
 #!/bin/bash
 __dirname=`pwd`
-if [ -f /usr/share/applications/sublime-text.desktop ]; then
+if [ -f /usr/share/applications/sublime_text.desktop ]; then
 	sudo apt-get install libgtk2.0-dev libglade2-dev firefox-dev libchm-dev libssl-dev
 	cd $__dirname
 
@@ -10,11 +10,11 @@ if [ -f /usr/share/applications/sublime-text.desktop ]; then
 
 	sudo cat bin_subl > /usr/bin/subl
 
-	sudo sed -i 's#=/opt/sublime_text/sublime_text\([^\n]*\)#=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text\1"#g' /usr/share/applications/sublime-text.desktop
+	sudo sed -i 's#=/opt/sublime_text/sublime_text\([^\n]*\)#=bash -c "LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text\1"#g' /usr/share/applications/sublime_text.desktop
 
 	cd ~
 
-	echo "success for sublime-text chinese supporting!"
+	echo "success for sublime_text chinese supporting!"
 else
-	echo "no file /usr/share/applications/sublime-text.desktop"
+	echo "no file /usr/share/applications/sublime_text.desktop"
 fi
